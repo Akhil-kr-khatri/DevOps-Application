@@ -26,3 +26,11 @@ dist-ssr/
 # OS
 .DS_Store
 Thumbs.db
+
+# Docker
+.docker/
+docker-data/
+docker-compose.override.yml
+docker-compose.yaml
+Dockerfile
+
