@@ -28,10 +28,9 @@ dist-ssr/
 Thumbs.db
 
 
-
+**/Dockerfile
 docker-compose.yml
-docker-compose.override.yml
-Dockerfile
-.github/workflows/ci-cd.yaml
+docker-compose.yaml
 .github/
-.github/workflows/
+
+
