@@ -28,9 +28,5 @@ dist-ssr/
 Thumbs.db
 
 
-**/Dockerfile
-docker-compose.yml
-docker-compose.yaml
-.github/
 
 
