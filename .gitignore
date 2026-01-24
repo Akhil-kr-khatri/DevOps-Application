@@ -27,7 +27,7 @@ dist-ssr/
 .DS_Store
 Thumbs.db
 
-# Terraform
+# Terraform state and cache
 *.tfstate
 *.tfstate.*
 .terraform/
@@ -38,5 +38,4 @@ override.tf.json
 *_override.tf
 *_override.tf.json
 .terragrunt-cache/
-
 
