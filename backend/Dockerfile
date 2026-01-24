@@ -16,9 +16,12 @@ RUN useradd -m djangouser
 
 WORKDIR /app
 
-# Copy installed packages and app
+# Copy installed packages and application
 COPY --from=builder /usr/local /usr/local
 COPY --from=builder /app /app
+
+# Give ownership of app directory to non-root user
+RUN chown -R djangouser:djangouser /app
 
 # Switch to non-root user
 USER djangouser
