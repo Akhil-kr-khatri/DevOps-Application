@@ -17,8 +17,11 @@ docker pull akhilkhatri/devops-backend:latest
 
 docker pull akhilkhatri/devops-frontend:latest
 
+docker network create devops-net
+
 # Run backend container
-docker run -d -p 8000:8000 --name backend akhilkhatri/devops-backend:latest
+docker run -d --name backend --network devops-net -p 8000:8000 akhilkhatri/devops-backend:latest
 
 # Run frontend container
-docker run -d -p 80:80 --name frontend -e VITE_API_URL=http://backend:8000 akhilkhatri/devops-frontend:latest
+docker run -d --name frontend --network devops-net -p 80:80 -e VITE_API_URL=http://backend:8000 akhilkhatri/devops-frontend:latest
+
