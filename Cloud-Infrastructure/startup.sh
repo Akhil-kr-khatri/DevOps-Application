@@ -20,8 +20,8 @@ docker pull akhilkhatri/devops-frontend:latest
 docker network create devops-net
 
 # Run backend container
-docker run -d --name backend --network devops-net -p 8000:8000 akhilkhatri/devops-backend:latest
+docker run -d --name backend --network devops-net --restart unless-stopped -p 8000:8000 akhilkhatri/devops-backend:latest
 
 # Run frontend container
-docker run -d --name frontend --network devops-net -p 80:80 akhilkhatri/devops-frontend:latest
+docker run -d --name frontend --network devops-net --restart unless-stopped -p 80:80 akhilkhatri/devops-frontend:latest
 
