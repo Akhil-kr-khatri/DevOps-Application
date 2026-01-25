@@ -23,5 +23,5 @@ docker network create devops-net
 docker run -d --name backend --network devops-net -p 8000:8000 akhilkhatri/devops-backend:latest
 
 # Run frontend container
-docker run -d --name frontend --network devops-net -p 80:80 -e VITE_API_URL=http://backend:8000 akhilkhatri/devops-frontend:latest
+docker run -d --name frontend --network devops-net -p 80:80 akhilkhatri/devops-frontend:latest
 
