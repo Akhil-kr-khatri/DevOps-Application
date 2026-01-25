@@ -12,5 +12,7 @@ services:
     container_name: react-frontend
     ports:
       - "3000:80"
+    environment:
+      - VITE_API_URL=http://django-backend:8000
     depends_on:
       - backend
