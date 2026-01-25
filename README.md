@@ -114,6 +114,7 @@ After completing the above steps:
 - The frontend UI loads successfully in the browser
 - The frontend communicates with the backend API
 - The application runs fully containerized on the local machine
+**Refer To The Scrrenshots:**https://github.com/Akhil-kr-khatri/DevOps-Application/tree/main/Screenshot
 
 ---
 
