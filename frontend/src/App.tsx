@@ -13,11 +13,9 @@ function App() {
     setError(null)
     try {
 
-      const API_URL = ' ';
       const response = await axios.get(`/api/hello/`);
-
-
-      setMessage(response.data.message)
+      setMessage(response.data.message);
+      
     } catch (err) {
       console.error(err)
       setError('Failed to connect to the backend. Please ensure the Django server is running.')
