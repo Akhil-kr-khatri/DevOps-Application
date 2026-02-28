@@ -13,9 +13,8 @@ function App() {
     setError(null)
     try {
 
-      const API_URL = 'http://localhost:8000';
-
-      const response = await axios.get(`${API_URL}/api/hello/`);
+      const API_URL = ' ';
+      const response = await axios.get(`/api/hello/`);
 
 
       setMessage(response.data.message)
