@@ -13,7 +13,7 @@ function App() {
     setError(null)
     try {
 
-      const response = await axios.get(`http://stratschool-prod-alb-59606506.ap-south-1.elb.amazonaws.com/api/hello/`);
+      const response = await axios.get(`/api/hello/`);
       setMessage(response.data.message);
       
     } catch (err) {
